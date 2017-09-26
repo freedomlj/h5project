@@ -1,0 +1,108 @@
+.container {
+  width: 200px;
+  height: 300px;
+  border-width: 20px;
+}
+.container div {
+  font-size: 14px;
+  background-color: #ccc;
+  background-image: url();
+  background-repeat: no-repeat;
+}
+.container div span {
+  display: inline-block;
+}
+.container div .link {
+  color: red;
+}
+.container div .link:hover {
+  color: black;
+}
+
+.box1 {
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.box2 {
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid;
+}
+
+.box3, .box4 {
+  width: 500px;
+  height: 300px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  border: 5px solid #666;
+  margin: 5px;
+}
+
+.box4 {
+  padding: 10px;
+}
+
+.box5 {
+  width: 1000px;
+}
+
+.box7 {
+  width: 1000px;
+  height: 500px;
+}
+
+.m-1 {
+  margin: 1px;
+}
+
+.m-2 {
+  margin: 2px;
+}
+
+.m-3 {
+  margin: 3px;
+}
+
+.m-4 {
+  margin: 4px;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.m-6 {
+  margin: 6px;
+}
+
+.m-7 {
+  margin: 7px;
+}
+
+.m-8 {
+  margin: 8px;
+}
+
+.m-9 {
+  margin: 9px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.box111 {
+  width:500px;
+}
+
+.box222 {
+  border:1px solid #666;
+}

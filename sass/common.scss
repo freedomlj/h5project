@@ -1,0 +1,102 @@
+$w : 1000px;
+$b-w : 20px;
+
+.container {
+	width: $w / 5;
+	height: 300px;
+	border-width: $b_w;
+
+	div {
+		font-size:14px;
+		span {
+			display: inline-block;
+		}
+
+		.link {
+			color : red;
+			&:hover {
+				color: black;
+			}
+		}
+
+		background: {
+			color : #ccc;
+			image : url();
+			repeat: no-repeat;
+		}
+
+		/*background-color : #ccc;
+		background-image : url("images/001.jpg");
+		background-position: 0 0;*/
+	}
+}
+
+@mixin test($h : 300px) {
+	width : $w / 2;
+	height : $h; 
+	display : inline-block;
+	font-size : 16px;
+	font-weight : bold;
+}
+
+.box1 {
+	@include test;
+}
+
+.box2 {
+	@include test;
+	border: 1px solid;
+}
+
+.box3 {
+	@include test;
+	border: 5px solid #666;
+	margin: 5px;
+}
+
+.box4 {
+	@extend .box3;
+	padding: 10px;
+}
+
+@if $w >= 1000 {
+	.box5 {
+		width : $w;
+	}
+} @else {
+	.box6 {
+		width : $w / 2;
+	}
+}
+
+.box7 {
+	@if $w >= 1000 {
+		width: $w;
+	} @else {
+		width : $w / 2;
+	}
+
+	height: 500px;
+}
+
+@for $i from 1 through 10 {
+	.m-#{$i} {
+		margin : #{$i}px;
+	}
+}
+
+@for $i from 1 through 10 {
+	.p-#{$i} {
+		padding : #{$i}px;
+	}
+}
+
+.box333 {
+	border:5px solid;
+}
+
+.my_test {
+	width: 300px;
+	height: 200px;
+	background: black;
+}
